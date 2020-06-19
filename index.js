@@ -33,3 +33,45 @@ function checkMultiplicity(num1, num2) {
 function isTrianglePossible(a, b, c) {
     return (a + b > c && a + c > b && b + c > a);
 }
+
+// Task 4
+
+/**
+ *
+ * @param {number} side - Rhomb's side length
+ * @param {number} height - Rhomb's height length
+ * @returns {number} - Rhomb's area
+ */
+function rhombArea(side, height) {
+    return side * height;
+}
+
+/**
+ *
+ * @param {number} height - Cylinder's height length
+ * @param {number} radius - Cylinder's base radius length
+ * @returns {number} - Cylinder's area
+ */
+function cylinderArea(height, radius) {
+    return 2 * Math.PI * radius * (height + radius);
+}
+
+/**
+ *
+ * @param {number} base - Triangle's base length
+ * @param {number} height - Triangle's height length
+ * @returns {number} - Triangle's area
+ */
+function triangleArea(base, height) {
+    return (base * height) / 2;
+}
+
+/**
+ *
+ * @param {number} length
+ * @param {number} width
+ * @returns {number}
+ */
+function rectangleArea(length, width) {
+    return length * width;
+}
